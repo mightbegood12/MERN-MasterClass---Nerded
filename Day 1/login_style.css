@@ -1,6 +1,5 @@
 :root{
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
-    --font-family: "Montserrat", sans-serif;
     --font-size-h1: 3rem;
     --font-size-p: 1.5rem;
     --font-size-inform : 1rem;
@@ -53,7 +52,7 @@ img{
     min-width: 602px;
     aspect-ratio: 1;
     align-self: center;
-    justify-self: center;;
+    justify-self: center;
 }
 
 .right{
