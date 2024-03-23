@@ -3,7 +3,7 @@
     --font-family: "Montserrat", sans-serif;
     --font-size-h1: 3rem;
     --font-size-p: 1.5rem;
-    --font-size-inform : 0.8rem;
+    --font-size-inform : 1rem;
     --font-weight-p: 500;
     --font-weight-h1: 700;
     --p-color: #334155;
@@ -11,8 +11,13 @@
     --right-bg:radial-gradient(50% 50% at 50% 50%, #F8FAFC 0%, #F5F8FB 45.49%, #F1F5F9 100%);
 
     --left-bg: radial-gradient(50% 50% at 50% 50%, #003cff 0%, #00367e 100%);
+    --left-bg-button: radial-gradient(40% 50% at 50% 50%, #144bff 10%, #043370 100%);
 
+}
 
+*, html{
+    padding: 0;
+    margin: 0;
 }
 
 h1, p{
@@ -31,17 +36,13 @@ p{
     font-size: var(--font-size-p);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-}
-
 main{
     display: flex;
     gap: 0;
 }
 
 .left{
+    flex:1;
     display: grid;
     background: var(--left-bg);
     width: 50%;
@@ -56,6 +57,7 @@ img{
 }
 
 .right{
+    flex: 1;
     display: grid;
     background: var(--right-bg);
     width: 50%;
@@ -63,7 +65,6 @@ img{
 }
 
 .right > div{
-    display: grid;
     align-self: center;
     justify-self: center;
     text-align: center;
@@ -81,12 +82,40 @@ img{
     font-size: 0.75rem;
     line-height: 24.38px;
     align-items: center;
+    gap: 10px;
 }
 
-input[type='email'],input[type='text']{
-    padding-inline: 100px;
-    padding-block: 32px;
+input[type='email'],input[type='text'],input[type='submit']{
+    width: 500px;
+    height: 80px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 16px;
 }
 
+input[type='submit']{
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    background: var(--left-bg-button);
+    padding-inline: 9.5rem;
+}
 
+::placeholder{
+    padding-left: 30px;
+}
 
+#right-align{
+    padding-left: 350px;
+}
+
+.register-text{
+    padding-bottom: 40p;
+}
+
+span{
+    font-weight: bold;
+    background: linear-gradient(to right, #002fff, #087bff,#23bbcf, #0d00c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
