@@ -90,6 +90,10 @@ img{
     gap: 10px;
 }
 
+input{
+    padding-left: 20px;
+}
+
 input[type='email'],input[type='text'],input[type='submit']{
     width: 500px;
     height: 80px;
@@ -111,7 +115,7 @@ input[type='submit']{
 }
 
 #right-align{
-    padding-left: 350px;
+    padding-left: 380px;
 }
 
 span{
@@ -120,4 +124,9 @@ span{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     padding-right: 2px;
+}
+
+.Login :hover{
+    filter: drop-shadow(0 0 0.75rem  #002fff);
+    transition: filter 300ms ease-out;
 }
