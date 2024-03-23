@@ -11,11 +11,11 @@
     --right-bg:radial-gradient(50% 50% at 50% 50%, #F8FAFC 0%, #F5F8FB 45.49%, #F1F5F9 100%);
 
     --left-bg: radial-gradient(50% 50% at 50% 50%, #003cff 0%, #00367e 100%);
-    --left-bg-button: radial-gradient(40% 50% at 50% 50%, #144bff 10%, #043370 100%);
+    --left-bg-button: linear-gradient(to right, #002fff, #087bff,#23bbcf);
 
 }
 
-*, html{
+*{
     padding: 0;
     margin: 0;
 }
@@ -72,6 +72,10 @@ img{
     letter-spacing: -0.04em;
 }
 
+.header-text{
+    height: 50px;
+}
+
 .right > form > div > p{
     font-size: var(--font-size-inform);
 }
@@ -82,6 +86,7 @@ img{
     font-size: 0.75rem;
     line-height: 24.38px;
     align-items: center;
+    margin-bottom: -8rem;
     gap: 10px;
 }
 
@@ -109,13 +114,10 @@ input[type='submit']{
     padding-left: 350px;
 }
 
-.register-text{
-    padding-bottom: 40p;
-}
-
 span{
     font-weight: bold;
     background: linear-gradient(to right, #002fff, #087bff,#23bbcf, #0d00c4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    padding-right: 2px;
 }
