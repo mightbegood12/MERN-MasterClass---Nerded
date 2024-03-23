@@ -1,17 +1,19 @@
 :root{
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+    /*init size */
     --font-size-h1: 3rem;
     --font-size-p: 1.5rem;
     --font-size-inform : 1rem;
+    /*init weight */
     --font-weight-p: 500;
     --font-weight-h1: 700;
+    /*init color */
     --p-color: #334155;
     --h1-color: #263238;
+    /*init bg*/
     --right-bg:radial-gradient(50% 50% at 50% 50%, #F8FAFC 0%, #F5F8FB 45.49%, #F1F5F9 100%);
-
     --left-bg: radial-gradient(50% 50% at 50% 50%, #003cff 0%, #00367e 100%);
     --left-bg-button: linear-gradient(to right, #002fff, #087bff,#23bbcf);
-
 }
 
 *{
