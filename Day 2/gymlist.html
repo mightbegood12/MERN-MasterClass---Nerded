@@ -14,16 +14,26 @@
             <img id="toji" src="./Assets/Toji__transparent_Craiyon.png">
         </div>
         <div class="center">
-            <form>
+            <div class="title">
                 <h1>NEW TO THE GYM?<br>SIGN UP BELOW</h1>
+            </div>
+            <form id="membr-details">
                 <h2>MEMBER DETAILS</h2>
-                <label>NAME</label><input><br>
-                <label>AGE</label><input><br>
-                <label>MOBILE NO</label><input><br>
-                <label>MEMBERSHIP TYPE</label><input><br>
-                <input type="submit">
+                <label>NAME<input placeholder="Enter your name" id="mem_name"></label><br>
+                <label>AGE<input placeholder="Enter your age" id="mem_age"></label><br>
+                <label>MOBILE NO<input placeholder="Enter your mobile no" id="mem_no"></label><br>
+                <label>MEMBERSHIP TYPE
+                    <select id="plan-type">
+                        <option value="std">Standard</option>
+                        <option value="prm">Premium</option>
+                    </select>
+                </label>
+                
+                <br>
+                <!-- <input type="submit" id="add"> -->
+                <button  id="addbtn" type="button" value="addbtn" onclick="additem()">Add</button>
             </form>
-            <div>
+            <div class="prm-bnfts">
                 <h1>WHY PREMIUM?</h1>
                 <ul>
                     <li>Personalized Trainer</li>
@@ -33,11 +43,12 @@
             </div>
         </div>
         <div class="right">
-            <h1 class="membr-list">GYM MEMBERS</h1>
-            <ul>
-                <li>Empty</li>
+            <h1>GYM MEMBERS</h1>
+            <ul id="membr-list">
+                
             </ul>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
