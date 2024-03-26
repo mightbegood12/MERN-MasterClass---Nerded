@@ -123,6 +123,7 @@ span{
     background: linear-gradient(to right, #002fff, #087bff,#23bbcf, #0d00c4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: none;
     padding-right: 2px;
 }
 

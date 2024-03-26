@@ -1,0 +1,58 @@
+:root{
+    --font-color: white;
+}
+
+
+*{
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+body{
+    background-image: url("./Assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left > #logo{
+    width: 200px;
+    margin-inline: 25%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.left > #toji{
+    width: 450px;
+    aspect-ratio: 1;
+}
+
+.wrapper{
+    display: flex;
+    flex-basis: 1fr;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1.5em;
+}
+
+.left{
+    flex: 1.1;
+    border-right: 1px solid white;
+    justify-self: center;
+}
+
+.center{
+    flex: 1;
+    border-right: 1px solid white;
+    justify-self: center;
+}
+
+.right{
+    flex: 1;
+    border-right: 1px solid white;
+    justify-self: center;
+}
