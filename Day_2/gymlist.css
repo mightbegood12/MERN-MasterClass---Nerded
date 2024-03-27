@@ -26,6 +26,7 @@ h1,h2,label{
 
 h1{
     font-size: 2.5rem;
+    z-index: 99;
 }
 
 h2{
@@ -147,10 +148,11 @@ button:hover{
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-top: 6%;
+    margin-top: 1%;
     gap: 5rem;
 }
 
 ul{
     overflow-x: hidden;
+    overflow-y: auto;
 }

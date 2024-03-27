@@ -29,6 +29,7 @@ function additem(){
 
 membr_list.addEventListener('click', (event)=>{
     if(event.target.tagName == 'BUTTON'){
+        event.preventDefault();
         // console.log("DELETED!");
         const btn = event.target;
         const prevSibling = btn.previousElementSibling;
